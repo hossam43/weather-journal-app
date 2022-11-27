@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+video {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+.app-container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.466);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+}
+
+input {
+  width: 400px;
+  margin: 20px;
+  background: transparent;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 4px #fff;
+  font-family: "Oswald", sans-serif;
+
+  transition: box-shadow 0.5 ease;
+  color: rgb(51, 211, 51);
+}
+
+input[placeholder]:focus {
+  color: #fff;
+}
+
+input:focus,
+.btn:hover {
+  box-shadow: 0 0 10px #fff;
+}
+.title {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+#myDiv {
+  width: 80%;
+  height: 300px;
+  border: #fff solid 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-size: 27px;
+}
+#generate,
+button {
+  background: transparent;
+  outline: none;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 4px #fff;
+  transition: box-shadow 0.5 ease;
+  margin: auto 5px;
+  margin-bottom: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.holder.entry {
+  width: 600px;
+  height: 300px;
+  margin: 20px;
+  background: transparent;
+  outline: none;
+  padding: 34px;
+  font-size: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 4px #fff;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+#entryHolder {
+  color: white;
+}
+#date,
+#city,
+#temp,
+#content {
+  color: rgb(51, 211, 51);
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+}
